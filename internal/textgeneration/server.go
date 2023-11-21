@@ -10,14 +10,8 @@ import (
 	pb "github.com/Max-Gabriel-Susman/delphi-inferential-service/textgeneration"
 )
 
-const defaultName = "world"
-
 var (
-	// we need to parameterize and resolve these addr redundancies l8r
-	// addr = flag.String("addr", "10.96.0.3:50052", "the address to connect to")
-	// addr = flag.String("addr", "10.100.0.3:50052", "the address to connect to")
 	addr = flag.String("addr", "localhost:50053", "the address to connect to")
-	name = flag.String("name", defaultName, "Name to greet")
 )
 
 type Server interface {
